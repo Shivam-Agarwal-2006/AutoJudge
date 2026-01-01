@@ -60,8 +60,8 @@ TF-IDF features and numeric features were combined into a single feature matrix.
 - Confusion Matrix
 
 **Final Classification Accuracy**:
-47.4%
-This result was selected after comparing multiple models (Logistic Regression, Linear SVC, class-weighted variants).
+- 47.4%
+- This result was selected after comparing multiple models (Logistic Regression, Linear SVC, class-weighted variants).
 
 ---
 
@@ -74,8 +74,8 @@ This result was selected after comparing multiple models (Logistic Regression, L
 - Root Mean Squared Error (RMSE)
 
 **Final Regression Results**:
-MAE: 1.726
-RMSE: 2.047
+- MAE: 1.726
+- RMSE: 2.047
 
 ## Web Interface (Streamlit)
 
