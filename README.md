@@ -98,15 +98,20 @@ The UI uses the **same trained models** used during evaluation.
 Follow the steps below to run AutoJudge on your local machine:
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/Shivam-Agarwal-2006/AutoJudge.git
 cd AutoJudge
-
+```
 ### 2. Create & activate virtual environment
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 ### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ### 4. Run the Streamlit app
+```bash
 streamlit run app/app.py
+```
