@@ -52,6 +52,6 @@ if st.button("Predict"):
         X_final = hstack([X_tfidf, X_numeric])
         pred_class = clf.predict(X_final)[0]
         pred_score = reg.predict(X_final)[0]
-
+        
         st.success(f"Predicted Difficulty Class: **{pred_class}**")
         st.success(f"Predicted Difficulty Score: **{round(pred_score, 2)}**")
