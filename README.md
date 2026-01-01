@@ -121,3 +121,7 @@ python src/train_regressor.py
 ```bash
 streamlit run app/app.py
 ```
+## My Details
+- Name : Shivam Agarwal
+- Enrollment Number : 24115134
+- Branch : MnC
