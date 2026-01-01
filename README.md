@@ -92,3 +92,21 @@ A simple **Streamlit web application** was built to demonstrate the model.
   - Predicted difficulty score
 
 The UI uses the **same trained models** used during evaluation.
+
+## Steps to Run the Project Locally
+
+Follow the steps below to run AutoJudge on your local machine:
+
+### 1. Clone the Repository
+git clone https://github.com/Shivam-Agarwal-2006/AutoJudge.git
+cd AutoJudge
+
+### 2. Create & activate virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+### 3. Install Dependencies
+pip install -r requirements.txt
+
+### 4. Run the Streamlit app
+streamlit run app/app.py
