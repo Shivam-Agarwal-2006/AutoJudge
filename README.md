@@ -111,7 +111,13 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Run the Streamlit app
+### 4. Train the models
+Run the following commands to train and save the models
+```bash
+python src/train_classifier.py
+python src/train_regressor.py
+```
+### 5. Run the Streamlit app
 ```bash
 streamlit run app/app.py
 ```
