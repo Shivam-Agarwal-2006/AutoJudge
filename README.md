@@ -121,6 +121,8 @@ python src/train_regressor.py
 ```bash
 streamlit run app/app.py
 ```
+## Demo Video
+https://drive.google.com/file/d/1Owwn990mRrnFk68C3_sqGQgO9vwMbOVv/view?usp=drive_link
 ## My Details
 - Name : Shivam Agarwal
 - Enrollment Number : 24115134
