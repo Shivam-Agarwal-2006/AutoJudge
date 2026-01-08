@@ -7,8 +7,9 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
 from features import build_features
 data = []
-
-with open("C:/Users/shiva/OneDrive/Desktop/Projects/AutoJudge/data/problems_data.jsonl", "r", encoding="utf-8") as f:
+import os
+os.makedirs("models", exist_ok=True)
+with open("data/problems_data.jsonl", "r", encoding="utf-8") as f:
     for line in f:
         data.append(json.loads(line))
 

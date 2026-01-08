@@ -7,10 +7,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 from features import build_features
-
+import os
+os.makedirs("models", exist_ok=True)
 data = []
 
-with open("C:/Users/shiva/OneDrive/Desktop/Projects/AutoJudge/data/problems_data.jsonl", "r", encoding="utf-8") as f:
+with open("data/problems_data.jsonl", "r", encoding="utf-8") as f:
     for line in f:
         data.append(json.loads(line))
 
