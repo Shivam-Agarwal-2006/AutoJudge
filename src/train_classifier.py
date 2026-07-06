@@ -47,3 +47,5 @@ with open("models/classifier.pkl", "wb") as f:
 
 with open("models/vectorizer.pkl", "wb") as f:
     pickle.dump(vectorizer, f)
+with open("models/scaler.pkl", "wb") as f:
+    pickle.dump(scaler, f)

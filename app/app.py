@@ -24,6 +24,8 @@ with open("models/classifier.pkl", "rb") as f:
 
 with open("models/regressor.pkl", "rb") as f:
     reg = pickle.load(f)
+with open("models/scaler.pkl", "rb") as f:
+    scaler = pickle.load(f)
 def extract_numeric_features(text):
     text_length = len(text)
 
@@ -50,7 +52,8 @@ if st.button("Predict"):
         X_tfidf = tfidf.transform([full_text])
         X_numeric =  extract_numeric_features(full_text)
         X_final = hstack([X_tfidf, X_numeric])
-        pred_class = clf.predict(X_final)[0]
+        X_final_scaled = scaler.transform(X_final)
+        pred_class = clf.predict(X_final_scaled)[0]
         pred_score = reg.predict(X_final)[0]
         
         st.success(f"Predicted Difficulty Class: **{pred_class}**")
